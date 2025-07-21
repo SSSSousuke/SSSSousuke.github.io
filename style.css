@@ -1,0 +1,212 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td {
+  vertical-align: top;
+  padding: 15px;
+}
+
+/* ヘッダー */
+.header {
+  background-color: #2c3e50;
+  color: white;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 250%;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* メニュー */
+.menu {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.menu a {
+  background-color: #3498db;
+  color: white;
+  padding: 10px 25px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 110%;
+  margin: 0 5px;
+  border-radius: 5px; /* ボタンの角を少し丸くする */
+}
+
+.menu a:hover {
+  background-color: #2980b9;
+}
+
+/* 左サイドバー */
+.sidebar-left {
+  background-color: #fdfdfd;
+  width: 20%;
+}
+
+.sidebar-left h2, .content h2, .sidebar-right h2 {
+  color: #2c3e50;
+  font-size: 150%;
+  border-bottom: 2px solid #f0f0f0; /* タイトルの下に線を引く */
+  padding-bottom: 10px;
+}
+
+.sidebar-left ul {
+  list-style-type: none; /* リストの黒点を消す */
+  padding: 0;
+}
+
+.sidebar-left li {
+  margin-bottom: 10px;
+}
+
+.sidebar-left a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.sidebar-left a:hover {
+  color: #e74c3c;
+}
+
+/* 中央コンテンツ */
+.content {
+  background-color: #ffffff;
+  width: 60%;
+}
+
+.content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px; /* 画像の角を丸くする */
+}
+
+/* 右サイドバー (お問い合わせフォーム) */
+.sidebar-right {
+  background-color: #f4f7f9;
+  width: 20%;
+}
+
+.sidebar-right input[type="text"],
+.sidebar-right input[type="email"],
+.sidebar-right textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; /* paddingが幅に影響しないようにする */
+}
+
+.sidebar-right input[type="submit"],
+.sidebar-right input[type="button"] {
+  width: auto;
+  font-weight: bold;
+  color: white;
+  background-color: #3498db;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.sidebar-right input[type="submit"]:hover,
+.sidebar-right input[type="button"]:hover {
+  background-color: #2980b9;
+}
+
+/* フッター */
+.footer {
+  background-color: #2c3e50;
+  color: #bdc3c7;
+  text-align: center;
+  font-size: 90%;
+}
+
+.footer a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #ecf0f1;
+}
+
+/* Portfolioページ用のテーブルスタイル */
+.portfolio-table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.portfolio-table th, .portfolio-table td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 12px;
+}
+
+.portfolio-table thead tr {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+/* Triviaページ用の計算機スタイル */
+.tax-calculator {
+  max-width: 450px;
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.tax-calculator .input-group {
+  margin-bottom: 15px;
+}
+
+.tax-calculator label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+.tax-calculator .calculate-btn {
+  background-color: #28a745; /* 緑色 */
+}
+.tax-calculator .calculate-btn:hover {
+  background-color: #218838;
+}
+
+.tax-calculator .reset-btn {
+  background-color: #dc3545; /* 赤色 */
+}
+.tax-calculator .reset-btn:hover {
+  background-color: #c82333;
+}
+
+.tax-calculator textarea {
+  margin-top: 20px;
+  font-size: 1.1em;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.5;
+  background-color: #e9ecef;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}

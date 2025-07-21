@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+   <html>
+   <head>
+       <meta charset="UTF-8">
+       <title>Sousuke’s Website-Trival</title>
+	    <link rel="stylesheet" href="style.css">
+   </head>
+   <body>
+<table class="layout-table" border="0">
+  
+    <tr class="header">
+        <td colspan="3">
+            <h1>Sousuke's Website</h1>
+        </td>
+    </tr>
+
+    <tr class="menu">
+        <td colspan="3">
+            <a href="https://codepen.io/soususke-sasaki/full/yyYYwrd">Home</a>
+            <a href="https://codepen.io/soususke-sasaki/full/azvdgEe">Portfolio</a>
+            <a href="https://codepen.io/soususke-sasaki/full/zxvqOGd">Trivia</a>
+        </td>
+    </tr>
+    
+    <tr class="content">
+        <td colspan="3">
+            <h2>Trivia: Consumption Tax Calculator</h2>
+            <p>Enter the price (before tax) and the tax rate (%) to calculate the final price.</p>
+
+            <div class="tax-calculator">
+                <form name="taxForm">
+                    <div class="input-group">
+                        <label for="price">Price (before tax):</label>
+                        <input type="text" id="price" name="price" placeholder="e.g., 1000">
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="taxRate">Tax Rate (%):</label>
+                        <input type="text" id="taxRate" name="taxRate" placeholder="e.g., 10">
+                    </div>
+                    
+                    <input type="button" value="Calculate" class="calculate-btn" onclick="calculateTax()">
+                    <input type="button" value="Reset" class="reset-btn" onclick="resetCalculator()">
+
+                    <textarea id="resultArea" name="resultArea" rows="3" readonly></textarea>
+                </form>
+            </div>
+        </td>
+    </tr>
+</table>
+</body>
+</html>
